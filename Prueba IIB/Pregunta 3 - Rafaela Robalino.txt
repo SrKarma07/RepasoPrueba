@@ -1,0 +1,33 @@
+public class Estudiante {
+    private String nombre;
+    private double notaMatematicas;
+    private double notaCiencias;
+    private double notaHistoria;
+
+    // Constructor, getters, setters, etc.
+
+    public double calcularPromedioGeneral() {
+        return (notaMatematicas + notaCiencias + notaHistoria) / 3;
+    }
+
+    public void imprimirResultado() {
+        double promedio = calcularPromedioGeneral();
+        
+        if (promedio >= 60) {
+            System.out.println(nombre + " ha aprobado con un promedio de " + promedio);
+        } else {
+            System.out.println(nombre + " ha reprobado con un promedio de " + promedio);
+        }
+    }
+}
+
+-Se creó el método imprimirResultado(). 
+
+-Se modificó el método calcularPromedioGeneral(). Antes era de tipo void, ahora se lo declaró como tipo double.
+Se encarga de calcular el promedio general y devuelve este valor. 
+
+-El método imprimirResultado() se encarga de obtener el promedio general usando el método previamente creado
+  y luego imprime el resultado correspondiente.
+
+-Se separó el método calcularPromedioGeneral() para que sea reutilizable en caso de que 
+ necesitemos utilizar el promedio en otras partes del programa.

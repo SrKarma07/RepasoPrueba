@@ -1,0 +1,8 @@
+public double gravedad = 9.81;
+
+double energiaPotencial(double masa, double altura) {
+    return masa * altura * gravedad;
+}
+
+- Se declaró la variable gravedad fuera del método. Esto con el fin de que esta variable pueda ser reutilizada
+en algún otro método.

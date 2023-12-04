@@ -1,0 +1,18 @@
+public class Empleado {
+    private String nombre;
+    private double salarioBase;
+    private double bonificaciones;
+    private double impuestos;
+
+    // Constructor, getters, setters
+    
+    public double calcularSalarioTotal() {
+        double salarioTotal = salarioBase + bonificaciones - (salarioBase * (impuestos / 100));
+        return salarioTotal;
+    }
+    // Otros métodos y atributos relevantes para el empleado
+}
+
+
+- Se renombró el método calcularSalario() a calcularSalarioTotal() para entender mejor su funcionalidad.
+- En el método calcularSalarioTotal(), se realizó el cálculo directamente para que sea más claro y conciso, eliminando variables temporales innecesarias.

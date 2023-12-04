@@ -1,0 +1,9 @@
+if (esAcuerdoEspecial()) {
+    total = precio * 0.90;
+} else {
+    total = precio * 0.94;
+}
+enviar();
+
+- En ambos casos del if-else, se llama al método enviar.
+Por lo cual, no hace falta repetirlo. Si no, únicamente llamar al método luego de realizar el if-else.

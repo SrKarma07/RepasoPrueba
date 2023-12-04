@@ -1,0 +1,16 @@
+public class Calculadora {
+    // Otros métodos de la clase...
+
+    public double Promedio(int[] numeros) {
+        double suma = 0;
+        for (int num : numeros) {
+            suma += num;
+        }
+        return suma / numeros.length;
+    }
+}
+
+- Se cambió el nombre del método a "Promedio", puesto que el nombre "operar" no es lo suficientemente claro sobre que está realizando el método.
+- Se eliminó la variable temporal "promedio", que almacena el resultado del promedio.
+- Adicional se cambió el método y la variable "suma" de tipo int a tipo double, esto con el fin de dar una mejor precisión del resultado del promedio.
+Puesto que al ser de tipo entero, el resultado de la operación será de tipo entero.

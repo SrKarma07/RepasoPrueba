@@ -1,0 +1,11 @@
+if ((puntaje > 80) ||
+    (ingreso >= 500 && ingreso <= 1100 && autorizado && puntaje > 50) ||
+    (ingreso > 1100)) {
+    aceptar();
+} else {
+    rechazar();
+}
+
+- Se invirtieron las condiciones del bloque if-else.
+Esto debido a que anteriormente existía una negaación antes del if.
+Para lo cual, se eliminó la negación que se encontraba y se invirtieron las condiciones.
